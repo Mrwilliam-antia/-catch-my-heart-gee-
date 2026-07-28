@@ -86,14 +86,18 @@ function createHeart(){
 
     heart.addEventListener("click",()=>{
 
-        score++;
+    score++;
 
-        scoreText.textContent = score;
+    scoreText.textContent = score;
 
-        heart.remove();
+    createExplosion(
+        heart.offsetLeft,
+        heart.offsetTop
+    );
 
-    });
+    heart.remove();
 
+});
 
 
     gameArea.appendChild(heart);
