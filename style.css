@@ -1,1 +1,40 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
+body{
+    font-family:Arial, sans-serif;
+    background:linear-gradient(135deg,#ff758c,#ff7eb3);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+h1{
+    font-size:2.5rem;
+    margin-bottom:15px;
+}
+
+.subtitle{
+    margin-bottom:40px;
+    font-size:1.2rem;
+}
+
+button{
+    padding:15px 35px;
+    border:none;
+    border-radius:40px;
+    font-size:1.1rem;
+    background:white;
+    color:#ff4d88;
+    cursor:pointer;
+}
