@@ -7,21 +7,57 @@
 
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <div class="container">
-    <h1>❤️ Catch My Heart ❤️</h1>
 
-    <p class="subtitle">
-        Made with love just for you 💜
-    </p>
+    <div id="menu">
+        <h1>❤️ Catch My Heart ❤️</h1>
 
-    <button id="startBtn">
-        Start Game
-    </button>
+        <p class="subtitle">
+            Made with love just for you 💜
+        </p>
+
+        <button id="startBtn">
+            Start Game
+        </button>
+    </div>
+
+
+    <div id="game" class="hidden">
+
+        <h2>Catch the hearts 💕</h2>
+
+        <div class="stats">
+            <p>Score: <span id="score">0</span></p>
+            <p>Time: <span id="time">30</span>s</p>
+        </div>
+
+        <div id="gameArea"></div>
+
+    </div>
+
+
+    <div id="endScreen" class="hidden">
+
+        <h1>🎉 You Did It ❤️</h1>
+
+        <p id="finalMessage">
+            You caught my heart forever 💜
+        </p>
+
+        <button onclick="location.reload()">
+            Play Again
+        </button>
+
+    </div>
+
+
 </div>
+
 
 <script src="script.js"></script>
 
 </body>
-</html>
+</html
