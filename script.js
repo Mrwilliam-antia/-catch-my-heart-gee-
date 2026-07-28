@@ -148,4 +148,26 @@ function endGame(){
 
     }
 
+function createExplosion(x,y){
+
+    const burst = document.createElement("div");
+
+    burst.className = "explosion";
+
+    burst.innerHTML = "💖 💕 💗";
+
+    burst.style.left = x + "px";
+
+    burst.style.top = y + "px";
+
+
+    gameArea.appendChild(burst);
+
+
+    setTimeout(()=>{
+
+        burst.remove();
+
+    },800);
+
 }
